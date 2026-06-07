@@ -218,6 +218,26 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── QR CODE ── */}
+<section className="py-12 bg-green-50">
+  <div className="max-w-2xl mx-auto px-4 text-center flex flex-col items-center gap-4">
+    <h2 className="text-2xl font-bold text-gray-900">
+      Scan to start on WhatsApp
+    </h2>
+    <p className="text-gray-500 text-sm">
+      On desktop? Scan this QR code with your phone camera to open WhatsApp instantly.
+    </p>
+    <img
+      src={`https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(WHATSAPP_LINK)}`}
+      alt="Scan to open MamaPlus on WhatsApp"
+      className="rounded-xl shadow-md w-48 h-48"
+    />
+    <p className="text-xs text-gray-400">
+      Point your phone camera at the QR code — no app needed
+    </p>
+  </div>
+</section>
+
       {/* ── FOOTER ── */}
       <footer className="bg-gray-900 text-gray-400 py-8">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
