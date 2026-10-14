@@ -347,7 +347,7 @@ export default function NurseSection({ whatsappNumber }: { whatsappNumber: strin
                       type="text"
                       value={nurse.name}
                       onChange={(e) => update('name', e.target.value)}
-                      placeholder="e.g. Ngozi Okafor"
+                      placeholder=""
                       className={inputClass}
                     />
                   </div>
@@ -358,7 +358,7 @@ export default function NurseSection({ whatsappNumber }: { whatsappNumber: strin
                       type="tel"
                       value={nurse.phone}
                       onChange={(e) => update('phone', e.target.value)}
-                      placeholder="e.g. 0803 000 0000"
+                      placeholder=""
                       className={inputClass}
                     />
                   </div>
@@ -371,7 +371,7 @@ export default function NurseSection({ whatsappNumber }: { whatsappNumber: strin
                       type="text"
                       value={nurse.licence}
                       onChange={(e) => update('licence', e.target.value)}
-                      placeholder="Your licence number"
+                      placeholder=""
                       className={inputClass}
                     />
                   </div>
@@ -398,7 +398,7 @@ export default function NurseSection({ whatsappNumber }: { whatsappNumber: strin
                     type="text"
                     value={nurse.area}
                     onChange={(e) => update('area', e.target.value)}
-                    placeholder="e.g. Yaba, Lagos"
+                    placeholder=""
                     className={inputClass}
                   />
                 </div>
